@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Hogwarts School of Witchcraft and Wizardry</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e06fda92ef.js" crossorigin="anonymous"></script>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap');</style>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>About Us</h1>
+        </section>
+
+        <!--about us content-->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>Britain's Only Magical Academy</h1>
+                    <p>Hogwarts School of Witchcraft and Wizardry, often shortened to Hogwarts, is a Scottish wizarding school located in the Scottish Highlands.
+                        We accept any magical student residing in the islands of Great Britain and Ireland at the age of eleven years old at the start of the incoming term for enrolment.
+                        Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the wizarding world.
+                        The school's motto is Draco Dormiens Nunquam Titillandus (Draco Dormiens Nvnqvam Titillandvs), which, translated from Latin, means "Never tickle a sleeping dragon".</p>
+                    <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="about-us.png">
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Hogwarts School of Witchcraft and Wizardry is a state-owned school, funded by the Ministry of Magic.<br>Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the wizarding world.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i> 
+            </div>
+            <p>Made with Magic</p> 
+        </section>
+
+        <!-- JavaScript for toggle menu -->
+        <script>            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+
+    </body>
+</html>

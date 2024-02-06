@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Hogwarts School of Witchcraft and Wizardry</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e06fda92ef.js" crossorigin="anonymous"></script>
+        <style> @import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;600;700&display=swap');</style>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="logo.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Our Classes</h1>
+        </section>
+
+        <!--classes content-->
+        <section class="lesson">
+            <h1>The Magic You'll Learn</h1>
+            <p>Lessons at Hogwarts are comprised of 7 core subjects and a variety of additional learning opportunities. See our course page for more information.</p>
+            <div class="row">
+                <div class="lesson-col">
+                    <h3>Core Skills</h3>
+                    <p>These subjects will be taught for the full 7 years you attend Hogwarts.</p>
+                </div>
+                <div class="lesson-col">
+                    <h3>Advanced Skills</h3>
+                    <p>These subjects will be devoloped from the second year onwards.</p>
+
+                </div>
+                <div class="lesson-col">
+                    <h3>Additional Opportunities</h3>
+                    <p>We offer a range of additional learning opportunities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Facilities-->
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>As well as state of the art classrooms, we also have many facilites to make your life more enjoyable here at Hogwarts.</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="library.jpeg">
+                    <h3>Specialist Library</h3>
+                    <p>Madam Pince keeps out library stocked with tomes of magic from around the world, in every subject available. Our restricted section is also accesible to older students, to learn more of the dangers of the darker side of magic.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="quidditch.jpeg">
+                    <h3>World Renowned Quidditch Pitch</h3>
+                    <p>Whether you're a spectator or a player, our famous Quidditch pitch is the place to be during the house tournament.</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="common-rooms.jpeg">
+                    <h3>House Common Rooms</h3>
+                    <p>Each house has it's own common room attached to the dormitories, each cartered to your particular personalities. So Hogwarts can really feel like home.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Hogwarts School of Witchcraft and Wizardry is a state-owned school, funded by the Ministry of Magic.<br>Established around the 10th century, Hogwarts is considered to be one of the finest magical institutions in the wizarding world.</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i> 
+            </div>
+            <p>Made with Magic</p> 
+        </section>
+
+        <!-- JavaScript for toggle menu -->
+        <script>            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0"
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px"
+            }
+        </script>
+
+    </body>
+</html>
